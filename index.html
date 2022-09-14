@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <title>Table</title>
+</head>
+
+<body>
+    <h1 class="h1">ДАННЫЕ СТУДЕНТОВ</h1>
+    <h2 class="h2">Поиск студентов</h2>
+
+    <form class="form form-inline">
+        <div class="form__search-input">
+            <label for="search-name">по фрагменту ФИО</label>
+            <input type="text" class="form-control form-control-input" id="search-name" name="search-name">
+        </div>
+        <div class="form__search-input">
+            <label for="search-faculty">по фрагменту названия факультета</label>
+            <input type="text" class="form-control form-control-input" id="search-faculty" name="search-faculty">
+        </div>
+        <div class="form__search-input">
+            <label for="search-start-education">по году начала обучения</label>
+            <input type="number" class="form-control form-control-input" id="search-start-education" name="search-start-education">
+        </div>
+        <div class="form__search-input">
+            <label for="search-finish-education">по году окончания обучения</label>
+            <input type="number" class="form-control form-control-input" id="search-finish-education" name="search-finish-education">
+        </div>
+    </form>
+
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th><button class="table-dark__th-button table-dark__th-button-name" type="button">ФИО студента</button></th>
+                <th><button class="table-dark__th-button table-dark__th-button-faculty" type="button">Факультет</button></th>
+                <th><button class="table-dark__th-button table-dark__th-button-birth" type="button">Дата рождения и возраст</button></th>
+                <th><button class="table-dark__th-button table-dark__th-button-education" type="button">Годы обучения</button></th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2 class="h2">Добавить студента в таблицу</h2>
+    <form class="form form-add">
+        <fieldset class="form-group">
+            <label for="input__name">ФИО</label>
+            <input type="text" class="form-control form-control-sm" id="input__name" name="input__name" pattern="[А-Яа-яЁё ]+" placeholder="Крякозябликов Иннокентий Перьевич" />
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="input__faculty">Факультет</label>
+            <input type="text" class="form-control form-control-sm" id="input__faculty" name="input__faculty" pattern="[А-Яа-яЁё ]+" />
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="input__age">Дата рождения</label>
+            <input type="date" class="form-control form-control-sm" id="input__age" name="input__age" min="1900-01-01">
+        </fieldset>
+        <fieldset class="form-group">
+            <label for="input__start-education">Год начала обучения</label>
+            <input type="number" class="form-control form-control-sm" id="input__start-education" name="input__start-education" placeholder="2000">
+        </fieldset>
+        <button type="submit" class="btn btn-primary" style="background-color: #212529;" id="btn-submit">Добавить студента</button>
+    </form>
+</body>
+
+</html>

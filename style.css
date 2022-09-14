@@ -1,0 +1,53 @@
+.h1 {
+    margin-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-inline {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.form__search-input {
+    display: block;
+}
+
+.form-inline label {
+    display: block;
+}
+
+.form-inline .form-control {
+    width: 100%;
+}
+
+.form-add {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    width: 40%;
+}
+
+.table td,
+.table th {
+    padding-left: 6rem;
+}
+
+.table-dark__th-button {
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    background-image: url('image/arrow-little-white.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 30px;
+    cursor: pointer;
+}
